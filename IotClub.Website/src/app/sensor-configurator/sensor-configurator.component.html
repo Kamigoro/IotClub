@@ -1,0 +1,5 @@
+<div class="sensor-list">
+    <div *ngFor="let sensorConfig of sensorsConfig$ | async; let i = index">
+        <app-sensor-config [sensorConfig]="sensorConfig"></app-sensor-config>
+    </div>
+</div>

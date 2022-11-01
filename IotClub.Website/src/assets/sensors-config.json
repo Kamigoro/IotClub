@@ -1,0 +1,30 @@
+[
+    {
+        "position": 1,
+        "name": "Pt-100-int-1",
+        "unit": "°C",
+        "description": "Capteur chaleur fond et haut du four",
+        "image": "/assets/default-images/pt-100-sensor.jpg"
+    },
+    {
+        "position": 2,
+        "name": "Pt-100-int-2",
+        "unit": "°C",
+        "description": "Capteur chaleur avant et bas du four",
+        "image": "/assets/default-images/pt-100-sensor.jpg"
+    },
+    {
+        "position": 3,
+        "name": "Pt-100-ext-1",
+        "unit": "°C",
+        "description": "Capteur chaleur millieu et droite du four",
+        "image": "/assets/default-images/pt-100-sensor.jpg"
+    },
+    {
+        "position": 4,
+        "name": "Pt-100-ext-2",
+        "unit": "°C",
+        "description": "Capteur chaleur millieu et gauche du four",
+        "image": "/assets/default-images/pt-100-sensor.jpg"
+    }
+]

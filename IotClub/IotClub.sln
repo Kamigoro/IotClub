@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IotClub.Api", "IotClub.Api\IotClub.Api.csproj", "{80F59955-6335-473C-BABD-6F3734F55710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotClub.Api.Contracts.V1", "IotClub.Api.Contracts.V1\IotClub.Api.Contracts.V1.csproj", "{D9E04F9E-5848-4845-B1FE-EED3A0E09CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotClub.Libraries", "IotClub.Libraries\IotClub.Libraries.csproj", "{E95E59B2-B75E-4BE7-83BE-C45131B6A401}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80F59955-6335-473C-BABD-6F3734F55710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F59955-6335-473C-BABD-6F3734F55710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F59955-6335-473C-BABD-6F3734F55710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F59955-6335-473C-BABD-6F3734F55710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E04F9E-5848-4845-B1FE-EED3A0E09CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E04F9E-5848-4845-B1FE-EED3A0E09CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E04F9E-5848-4845-B1FE-EED3A0E09CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E04F9E-5848-4845-B1FE-EED3A0E09CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E95E59B2-B75E-4BE7-83BE-C45131B6A401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E95E59B2-B75E-4BE7-83BE-C45131B6A401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E95E59B2-B75E-4BE7-83BE-C45131B6A401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E95E59B2-B75E-4BE7-83BE-C45131B6A401}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4123C4EE-DBBC-4F9A-B9D5-333F42E52E7B}
+	EndGlobalSection
+EndGlobal

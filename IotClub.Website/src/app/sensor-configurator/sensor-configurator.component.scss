@@ -1,0 +1,7 @@
+.sensor-list {
+    display: inline-flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 20px;
+}

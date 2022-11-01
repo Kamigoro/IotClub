@@ -1,0 +1,48 @@
+.sensor-config-card {
+    max-width: 200px;
+    background-color: #e5e5e5;
+    color: #000000;
+}
+
+//IMAGE
+
+img {
+    border: 1px solid black;
+    height: 150px;
+}
+
+
+//MAIN CONTENT
+[id = sensor-config-field]{
+    text-align: right;
+}
+
+[id = sensor-config-table]{
+    width: 100%;
+}
+
+//DESCRIPTION
+
+textarea {
+    resize: none;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+//BUTTONS
+.sensor-config-button-wrapper{
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  grid-gap: 5px;
+}
+
+[id = calibration-button]{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+[id = save-button]{
+    grid-column: 1;
+    grid-row: 2;
+}

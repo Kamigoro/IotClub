@@ -1,0 +1,40 @@
+<div *ngIf="sensorConfig">
+    <mat-card class="sensor-config-card">
+
+        <!--Image of th sensor, should be able to be replaced-->
+        <img mat-card-image src={{sensorConfig.image}} alt="Photo of a sensor">
+
+        <!--Main configuration content-->
+        <mat-card-content>
+          
+          <!--Sensor position-->
+          <mat-card-title>Capteur position {{sensorConfig.position}}</mat-card-title>
+
+          <!--Configuration of the sensor-->
+          <table id="sensor-config-table">
+            <tr>
+              <td>Nom :</td>
+              <td id="sensor-config-field">{{sensorConfig.name}}</td>
+            </tr>
+            <tr>
+              <td>Unité :</td>
+              <td id="sensor-config-field">{{sensorConfig.unit}}</td>
+            </tr>
+          </table>
+
+          <!--Description of the sensor-->
+          <div class="sensor-config-description-section">
+            Description
+            <textarea>{{sensorConfig.description}}</textarea>
+          </div>
+
+        </mat-card-content>
+
+        <!--Buttons to calibrate or save the config-->
+        <mat-card-actions>
+            <button mat-raised-button id="calibration-button" (click)="calibrate()">Calibrer</button>
+            <button mat-raised-button id="save-button">Sauvegarder</button>
+        </mat-card-actions>
+        
+      </mat-card>
+</div>
