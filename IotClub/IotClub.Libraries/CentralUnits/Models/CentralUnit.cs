@@ -1,9 +1,14 @@
 ﻿using IotClub.Libraries.SensorsConfiguration.Models;
+using System.Text.Json.Serialization;
 
 namespace IotClub.Libraries.CentralUnits.Models
 {
     public class CentralUnit
     {
+        /// <summary>
+        /// Partition key for cosmos
+        /// </summary>
+        public string Pk => this.TenantId;
         /// <summary>
         /// Unique identifier of the central unit
         /// </summary>

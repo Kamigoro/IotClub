@@ -10,14 +10,14 @@ namespace IotClub.Libraries.CentralUnits.Repositories
         /// </summary>
         /// <param name="centralUnit">The initial <see cref="CentralUnit">central unit</see> configuration.</param>
         /// <returns>The <see cref="CentralUnit">central unit</see> configuration stored.</returns>
-        Task<CentralUnit> StoreCentralUnitAsync(CentralUnit centralUnit);
+        Task<CentralUnit?> StoreCentralUnitAsync(CentralUnit centralUnit);
         /// <summary>
         /// Retrieve a <see cref="CentralUnit">central unit</see> by its tenant and unique id.
         /// </summary>
         /// <param name="tenantId"></param>
         /// <param name="unitId"></param>
         /// <returns>The <see cref="CentralUnit">central unit</see> configuration stored.</returns>
-        Task<CentralUnit> GetCentralUnitByIdAsync(string tenantId, string unitId);
+        Task<CentralUnit?> GetCentralUnitByIdAsync(string tenantId, string unitId);
         /// <summary>
         /// Update an existing <see cref="CentralUnit">central unit</see> in the store.
         /// </summary>
@@ -25,7 +25,7 @@ namespace IotClub.Libraries.CentralUnits.Repositories
         /// <param name="unitId"></param>
         /// <param name="centralUnit">The updated <see cref="CentralUnit">central unit</see> configuration.</param>
         /// <returns>The <see cref="CentralUnit">central unit</see> configuration updated.</returns>
-        Task<CentralUnit> UpdateCentralUnitAsync(string tenantId, string unitId, CentralUnit centralUnit);
+        Task<CentralUnit?> UpdateCentralUnitAsync(string tenantId, string unitId, CentralUnit centralUnit);
         /// <summary>
         /// Delete an existing <see cref="CentralUnit">central unit</see> in the store.
         /// </summary>
@@ -41,7 +41,7 @@ namespace IotClub.Libraries.CentralUnits.Repositories
         /// <param name="centralUnitId"></param>
         /// <param name="sensorConfiguration"></param>
         /// <returns>The <see cref="SensorConfiguration">sensor configuration</see> stored.</returns>
-        Task<SensorConfiguration> StoreSensorConfigurationAsync(string tenantId, string centralUnitId, SensorConfiguration sensorConfiguration);
+        Task<SensorConfiguration?> StoreSensorConfigurationAsync(string tenantId, string centralUnitId, SensorConfiguration sensorConfiguration);
         /// <summary>
         /// Gets the <see cref="SensorConfiguration">sensor configuration</see> at a certain position on the <see cref="CentralUnit">central unit</see>.
         /// </summary>
@@ -49,13 +49,13 @@ namespace IotClub.Libraries.CentralUnits.Repositories
         /// <param name="centralUnitId"></param>
         /// <param name="sensorPosition"></param>
         /// <returns>The <see cref="SensorConfiguration">sensor configuration</see> stored.</returns>
-        Task<SensorConfiguration> GetSensorConfigurationByPositionAsync(string tenantId, string centralUnitId, int sensorPosition);
+        Task<SensorConfiguration?> GetSensorConfigurationByPositionAsync(string tenantId, string centralUnitId, int sensorPosition);
         /// <summary>
         /// Get all the <see cref="SensorConfiguration">sensors configurations</see> on the central unit.
         /// </summary>
         /// <param name="tenantId"></param>
         /// <param name="centralUnitId"></param>
         /// <returns>The <see cref="SensorConfiguration">sensors configurations</see> stored.</returns>
-        Task<SensorConfiguration[]> GetSensorsConfigurationAsync(string tenantId, string centralUnitId);
+        Task<SensorConfiguration[]?> GetSensorsConfigurationAsync(string tenantId, string centralUnitId);
     }
 }
